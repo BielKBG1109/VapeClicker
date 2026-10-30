@@ -1108,7 +1108,7 @@ function admin(){const m=$('admp'),bt=(a,t)=>`<button class="s" data-a="${a}">${
  <h3>Velocidad de producción</h3><div class="bar">${bt('v1','x1')}${bt('v10','x10')}${bt('v100','x100')}</div></div>`;
  m.onclick=e=>{const a=e.target.dataset.a;if(a&&ACT[a]){ACT[a]();sfx('up');render();$('ad').textContent=fmt(S.n)}if(e.target.id==='ax'||e.target===m)m.hidden=true}}
 // Botón oculto del panel: pide contraseña antes de abrir el panel
-$('adm').onclick=()=>ask('Contraseña de administrador:','pw',v=>{if(String(v)==='1109')admin();else{toast('Contraseña incorrecta');sfx('no')}});
+$('adm').onclick=()=>ask('Contraseña de administrador:','pw',v=>{if(String(v)==='990011')admin();else{toast('Contraseña incorrecta');sfx('no')}});
 // tooltip
 // Tooltip: cuadro de información que sigue al ratón sobre cualquier elemento con data-tip
 const TIP=document.createElement('div');TIP.id='tip';TIP.setAttribute('role','tooltip');document.body.appendChild(TIP);let tipEl=null;

@@ -58,7 +58,7 @@
 /* ESTILOS BASE de la página (fondo, texto, botones) y la rejilla de 3 columnas (.app) */
 *{box-sizing:border-box}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;height:100%;background:var(--room);color:var(--chalk);font:400 .9375rem/1.45 var(--fb);touch-action:pan-x pan-y}
+body{margin:0;height:100%;background:var(--room);color:var(--chalk);font:400 .9375rem/1.45 var(--fb)}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--chalky);outline-offset:2px}
 [hidden]{display:none!important}
@@ -1205,15 +1205,6 @@ render();checkUnlocks();
 })();
 
 
-// Prevenir zoom por doble toque en móvil
-(function(){
-  var last=0;
-  document.addEventListener('touchend',function(e){
-    var now=Date.now();
-    if(now-last<300){e.preventDefault();}
-    last=now;
-  },{passive:false});
-})();
 
 </script>
 
